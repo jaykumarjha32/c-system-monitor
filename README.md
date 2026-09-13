@@ -1,14 +1,21 @@
 # C System Monitor
 
-A Linux command-line system monitoring utility developed in C.
+A menu-driven Linux command-line utility developed in C for monitoring basic system information such as system uptime, memory usage, process count, and hostname.
+
+## Overview
+
+The project demonstrates C programming and Linux system-level concepts by reading system information from the Linux `/proc` filesystem.
+
+The application provides an interactive menu through which users can select different monitoring operations.
 
 ## Features
 
-- Display system uptime
-- Display memory usage
-- Display process count
-- Display system hostname
-- Display all system information through a single option
+- View system uptime
+- View total, available, and used memory
+- View the number of existing processes
+- View system hostname
+- Display all available monitoring information
+- Handle invalid user input
 
 ## Technologies
 
@@ -17,25 +24,36 @@ A Linux command-line system monitoring utility developed in C.
 - GCC
 - Linux `/proc` filesystem
 
-## C Concepts Used
+## C Concepts Demonstrated
 
 - Functions
 - Pointers
 - Structures
-- Arrays and character buffers
+- Character arrays
 - File handling
-- String handling
-- Loops and conditional statements
+- String processing
+- Loops
+- Conditional statements
 - Switch-case
 - Error handling
 - Directory operations
 
+## Linux Concepts
+
+The project interacts with Linux system information through:
+
+- `/proc/uptime` - system uptime
+- `/proc/meminfo` - memory information
+- `/proc/sys/kernel/hostname` - system hostname
+- `/proc` - process information
+
 ## Compilation
+
+Compile the program using GCC:
 
 ```bash
 gcc -Wall -Wextra -o system_monitor system_monitor.c
 
 ## Execution
-
 ```bash
 ./system_monitor
