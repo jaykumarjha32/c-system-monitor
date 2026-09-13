@@ -55,5 +55,6 @@ Compile the program using GCC:
 gcc -Wall -Wextra -o system_monitor system_monitor.c
 
 ## Execution
+
 ```bash
 ./system_monitor
